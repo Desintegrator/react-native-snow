@@ -1,4 +1,4 @@
-# react-native-snow
+# react-native-snow-dezintegrator
 Fullscreen snow overlay component for React Native.  This can be used in any
 view (but should only be used in one place) and this will place a fullscreen
 overlay of snow on your app, making it easy to apply and remove.
@@ -9,12 +9,12 @@ can make your app festive very easily with this component!
 # Usage
 To use, install the npm module:
 ```
-npm install --save react-native-snow
+npm install --save react-native-snow-dezintegrator
 ```
 
 Then import the Snow component:
 ```
-import Snow from 'react-native-snow';
+import Snow from 'react-native-snow-dezintegrator';
 ```
 
 Then add it anywhere in your JSX (you should only do this in one place!):
@@ -41,6 +41,7 @@ Snow.propTypes = {
   snowflakesStyle: { color: 'blue' },
   // Specify amount of snowflakes present ('light', 'medium')
   snowfall: 'medium',
+  fallTimeMax: int // after this time snowflakes will stop fall (in ms), if not specified it'l be looped
 };
 ```
 

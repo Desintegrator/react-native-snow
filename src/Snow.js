@@ -12,7 +12,7 @@ const windowHeight = Dimensions.get('window').height + (Dimensions.get('window')
 
 export default class Snow extends Component {
   render() {
-    const { snowfall, snowflakesStyle } = this.props;
+    const { snowfall, snowflakesStyle, fallTimeMax } = this.props;
     const snowflakes = snowfall === 'medium' ? mediumSnowflakes : lightSnowflakes;
     return (
       <View style={styles.view} pointerEvents="none">
@@ -28,6 +28,7 @@ export default class Snow extends Component {
                 fallDelay={fallDelay}
                 shakeDelay={shakeDelay}
                 style={snowflakesStyle}
+                fallTimeMax={fallTimeMax || 0}
               />
             );
           })
