@@ -1,6 +1,6 @@
 {
   "name": "react-native-snow",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Fullscreen snow overlay component for react native",
   "main": "./src/Snow.js",
   "scripts": {
